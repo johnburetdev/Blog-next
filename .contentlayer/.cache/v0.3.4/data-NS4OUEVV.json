@@ -1,0 +1,76 @@
+{
+  "cacheItemsMap": {
+    "01-blog.mdx": {
+      "document": {
+        "title": "01 - Apple anuncia el lanzamiento del iPhone 15 para septiembre de 2024",
+        "date": "2024-05-10T04:00:00.000Z",
+        "description": "Apple ha generado gran expectativa con el anuncio del lanzamiento del iPhone 15 para septiembre de 2024, prometiendo mejoras notables en varios aspectos clave del dispositivo.",
+        "body": {
+          "raw": "\r\nApple ha confirmado oficialmente que el iPhone 15 se lanzará en septiembre de este año. Se espera que el nuevo dispositivo incluya mejoras significativas en la cámara, el rendimiento del procesador y la duración de la batería. Los rumores sugieren también la integración de tecnologías innovadoras, como la carga inalámbrica de larga distancia y capacidades de realidad aumentada mejoradas.\r\n",
+          "html": "<p>Apple ha confirmado oficialmente que el iPhone 15 se lanzará en septiembre de este año. Se espera que el nuevo dispositivo incluya mejoras significativas en la cámara, el rendimiento del procesador y la duración de la batería. Los rumores sugieren también la integración de tecnologías innovadoras, como la carga inalámbrica de larga distancia y capacidades de realidad aumentada mejoradas.</p>"
+        },
+        "_id": "01-blog.mdx",
+        "_raw": {
+          "sourceFilePath": "01-blog.mdx",
+          "sourceFileName": "01-blog.mdx",
+          "sourceFileDir": ".",
+          "contentType": "mdx",
+          "flattenedPath": "01-blog"
+        },
+        "type": "Post",
+        "url": "/posts/01-blog"
+      },
+      "documentHash": "1716243489832",
+      "hasWarnings": false,
+      "documentTypeName": "Post"
+    },
+    "02-blog.mdx": {
+      "document": {
+        "title": "02 -Tesla revela su nuevo modelo de automóvil eléctrico con tecnología de conducción autónoma avanzada",
+        "date": "2024-05-06T04:00:00.000Z",
+        "description": "Tesla sorprende al mundo automotriz con la presentación de un nuevo modelo de automóvil eléctrico equipado con tecnología de conducción autónoma avanzada, consolidando su posición como líder en innovación en este campo",
+        "body": {
+          "raw": "\r\nTesla ha presentado su última creación en el campo de los vehículos eléctricos: un modelo que incorpora tecnología de conducción autónoma de última generación. Elon Musk, CEO de Tesla, afirmó que este nuevo modelo marca un hito en la industria automotriz, con capacidades de conducción autónoma que superan con creces a las generaciones anteriores.",
+          "html": "<p>Tesla ha presentado su última creación en el campo de los vehículos eléctricos: un modelo que incorpora tecnología de conducción autónoma de última generación. Elon Musk, CEO de Tesla, afirmó que este nuevo modelo marca un hito en la industria automotriz, con capacidades de conducción autónoma que superan con creces a las generaciones anteriores.</p>"
+        },
+        "_id": "02-blog.mdx",
+        "_raw": {
+          "sourceFilePath": "02-blog.mdx",
+          "sourceFileName": "02-blog.mdx",
+          "sourceFileDir": ".",
+          "contentType": "mdx",
+          "flattenedPath": "02-blog"
+        },
+        "type": "Post",
+        "url": "/posts/02-blog"
+      },
+      "documentHash": "1716248951707",
+      "hasWarnings": false,
+      "documentTypeName": "Post"
+    },
+    "03-blog.mdx": {
+      "document": {
+        "title": "03 -Tesla revela su nuevo modelo de automóvil eléctrico con tecnología de conducción autónoma avanzada",
+        "date": "2024-05-15T04:00:00.000Z",
+        "description": "Tesla sorprende al mundo automotriz con la presentación de un nuevo modelo de automóvil eléctrico equipado con tecnología de conducción autónoma avanzada, consolidando su posición como líder en innovación en este campo",
+        "body": {
+          "raw": "\r\nTesla ha presentado su última creación en el campo de los vehículos eléctricos: un modelo que incorpora tecnología de conducción autónoma de última generación. Elon Musk, CEO de Tesla, afirmó que este nuevo modelo marca un hito en la industria automotriz, con capacidades de conducción autónoma que superan con creces a las generaciones anteriores.",
+          "html": "<p>Tesla ha presentado su última creación en el campo de los vehículos eléctricos: un modelo que incorpora tecnología de conducción autónoma de última generación. Elon Musk, CEO de Tesla, afirmó que este nuevo modelo marca un hito en la industria automotriz, con capacidades de conducción autónoma que superan con creces a las generaciones anteriores.</p>"
+        },
+        "_id": "03-blog.mdx",
+        "_raw": {
+          "sourceFilePath": "03-blog.mdx",
+          "sourceFileName": "03-blog.mdx",
+          "sourceFileDir": ".",
+          "contentType": "mdx",
+          "flattenedPath": "03-blog"
+        },
+        "type": "Post",
+        "url": "/posts/03-blog"
+      },
+      "documentHash": "1716247463771",
+      "hasWarnings": false,
+      "documentTypeName": "Post"
+    }
+  }
+}

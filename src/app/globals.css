@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+h1 {
+    @apply mx-10 text-center my-10 text-cyan-700
+}
+
+time {
+    @apply mx-16 text-xl my-8 text-cyan-900
+}
+
+p {
+    @apply mx-16 text-justify text-xl my-2
+}
