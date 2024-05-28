@@ -1,6 +1,8 @@
 import PostList from "@/app/components/PostList";
 import PostPagination from "@/app/components/PostPagination";
-import { allPosts, Post } from "contentlayer/generated";
+import { getPostPagination, totalPages } from "@/app/utils/PostPagination";
+import { allPosts } from "contentlayer/generated";
+import { notFound } from "next/navigation";
 
 interface Props {
   params: {
@@ -10,24 +12,30 @@ interface Props {
 export const generateStaticParams = () => {
   return allPosts.map((post) => ({ numbers: post._raw.flattenedPath }));
 };
-const posts: Post[] = allPosts.sort((a, b) => b.date.localeCompare(a.date));
-
-const totalPost = posts.length;
-const postsPerPage = 5;
-const totalPages = Math.ceil(totalPost / postsPerPage);
 
 const LayoutPages = ({ params }: Props) => {
-  const currentPage = parseInt(params.numbers);
-  const offset = (currentPage - 1) * postsPerPage;
-
-  const currentPost = posts.slice(offset, offset + postsPerPage);
+  let arrayCurrentPost;
+  try {
+    if (!/^\d+$/.test(params.numbers)) {
+      throw new Error(`Page does no exits`);
+    }
+    const currentPage = parseInt(params.numbers);
+    arrayCurrentPost = getPostPagination(currentPage).currentPost;
+  } catch (error) {
+    notFound();
+  }
 
   return (
     <div>
       <h1 className="text-center my-4 text-3xl">POSTS</h1>
       <div className="grid gap-4 mx-12">
-        <PostList posts={currentPost} />
-        <PostPagination totalPages={totalPages} currentPage={currentPage} />
+        <PostList posts={arrayCurrentPost} />
+        {totalPages > 1 && (
+          <PostPagination
+            totalPages={totalPages}
+            currentPage={parseInt(params.numbers)}
+          />
+        )}
       </div>
     </div>
   );
