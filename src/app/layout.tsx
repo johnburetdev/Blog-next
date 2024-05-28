@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import Link from "next/link";
 import Avatar from "@/assets/images/avatar.jpg";
 import "./globals.css";
-import Link from "next/link";
 
 console.log(Avatar);
 
