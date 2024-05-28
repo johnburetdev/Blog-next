@@ -10,7 +10,9 @@ interface Props {
   };
 }
 export const generateStaticParams = () => {
-  return allPosts.map((post) => ({ numbers: post._raw.flattenedPath }));
+  return Array.from({ length: totalPages }).map((_, index) => ({
+    numbers: `${index + 1}`,
+  }));
 };
 
 const LayoutPages = ({ params }: Props) => {

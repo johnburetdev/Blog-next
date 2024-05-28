@@ -24,7 +24,7 @@ var Post = defineDocumentType(() => ({
   computedFields: {
     url: {
       type: "string",
-      resolve: (post) => `/posts/${post._raw.flattenedPath}`
+      resolve: (post) => `/blog/${post._raw.flattenedPath}`
     }
   }
 }));
@@ -36,4 +36,4 @@ export {
   Post,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-HMF6ZUGE.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-MOIJSFJ2.mjs.map
