@@ -3,7 +3,7 @@ import { allPosts, Post } from "contentlayer/generated";
 const posts: Post[] = allPosts.sort((a, b) => b.date.localeCompare(a.date));
 
 const totalPost = posts.length;
-const postsPerPage = 5;
+const postsPerPage = 2;
 export const totalPages = Math.ceil(totalPost / postsPerPage);
 
 export const getPostPagination = (currentPage: number = 1) => {
