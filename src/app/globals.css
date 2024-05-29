@@ -4,15 +4,22 @@
 
 
 
-
-h1 {
-    @apply mx-10 text-center my-10 text-cyan-700
-}
-
-time {
-    @apply mx-16 text-xl my-8 text-cyan-900
-}
-
 p {
-    @apply mx-16 text-justify text-xl my-2
+    @apply mb-4 text-justify;
+}
+
+pre>code {
+    @apply grid;
+}
+
+pre {
+    @apply p-4 rounded my-4;
+}
+
+article pre code {
+    @apply bg-transparent text-sm border-none;
+}
+
+article code {
+    @apply bg-gray-200 px-2 rounded text-sm border;
 }

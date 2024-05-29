@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Post } from "contentlayer/generated";
+import ButtonLink from "./ButtonLink";
 
 interface Props {
   post: Post;
@@ -8,9 +9,9 @@ interface Props {
 const PostItem = ({ post }: Props) => {
   return (
     <>
-      <article className="shadow-md rounded-md p-4 border my-2">
-        <h2 className="my-3 text-2xl mx-5">
-          <Link className="text-cyan-700 hover:text-blue-600" href={post.url}>
+      <article className="rounded border p-4">
+        <h2 className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-4xl font-bold text-transparent">
+          <Link href={post.url} className="text-cyan-700 hover:text-blue-600">
             {post.title}
           </Link>
         </h2>
@@ -21,6 +22,8 @@ const PostItem = ({ post }: Props) => {
             day: "numeric",
           })}
         </time>
+        <p>{post.description}</p>
+        <ButtonLink href={post.url}>Seguir Leyendo</ButtonLink>
       </article>
     </>
   );

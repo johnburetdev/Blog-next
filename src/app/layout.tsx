@@ -4,8 +4,6 @@ import Link from "next/link";
 import Avatar from "@/assets/images/avatar.jpg";
 import "./globals.css";
 
-console.log(Avatar);
-
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

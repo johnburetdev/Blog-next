@@ -7,11 +7,11 @@ interface Props {
 
 const PostList = ({ posts }: Props) => {
   return (
-    <div className="mx-14">
+    <>
       {posts.map((post) => (
         <PostItem key={post._raw.flattenedPath} post={post} />
       ))}
-    </div>
+    </>
   );
 };
 export default PostList;
